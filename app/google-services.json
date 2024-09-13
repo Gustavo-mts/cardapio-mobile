@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629515319820",
+    "project_id": "primeiro-android-50aa8",
+    "storage_bucket": "primeiro-android-50aa8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629515319820:android:dd8357bc4894055a910c29",
+        "android_client_info": {
+          "package_name": "list.view"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ4IjAiaOL5J2RmwW3180MfoONUZS6Qes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
