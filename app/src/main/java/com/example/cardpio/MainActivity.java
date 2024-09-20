@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
         dialog = new ProgressDialog(this);
         dialog.setTitle("Carregando");
 
+        recyclerView = findViewById(R.id.recycler_random);
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 1));
+
         searchView = findViewById(R.id.searchView_home);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -73,19 +77,18 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(spinnerSelectedListener);
 
         manager = new RequestManager(this);
-//        manager.getRandomRecipes(randomRecipeResponseListener);
-//        dialog.show();
+//       manager.getRandomRecipes(randomRecipeResponseListener);
+       dialog.show();
     }
 
     private final RandomRecipeResponseListener randomRecipeResponseListener = new RandomRecipeResponseListener() {
         @Override
         public void didFetch(RandomRecipeApiResponse response, String message) {
             dialog.dismiss();
-            recyclerView = findViewById(R.id.recycler_random);
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 1));
+            
             randomRecipeAdapter = new RandomRecipeAdapter(response.recipes, MainActivity.this, recipeClickListenner);
             recyclerView.setAdapter(randomRecipeAdapter);
+            randomRecipeAdapter.notifyDataSetChanged();
         }
 
         @Override

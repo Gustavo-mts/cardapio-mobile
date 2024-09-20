@@ -3,19 +3,19 @@
     <string name="api_key">eee24baa3c374b58a5b6170b382e1a66</string>
 
     <string-array name="tags">
-        <item>main course</item>
-        <item>side dish</item>
-        <item>dessert</item>
-        <item>appetizer</item>
-        <item>bread</item>
-        <item>breakfast</item>
-        <item>soup</item>
+        <item>pratos principais</item>
+        <item>acompanhamento</item>
+        <item>sobremesa</item>
+        <item>aperitibos</item>
+        <item>pães</item>
+        <item>café da manhã</item>
+        <item>sopa</item>
         <item>beverage</item>
-        <item>sauce</item>
-        <item>marinade</item>
-        <item>fingerfood</item>
-        <item>snack</item>
-        <item>drink</item>
-        <item>salad</item>
+        <item>molhos</item>
+        <item>marinados</item>
+        <item>petiscos</item>
+        <item>lanche</item>
+        <item>bebida</item>
+        <item>salada</item>
     </string-array>
 </resources>

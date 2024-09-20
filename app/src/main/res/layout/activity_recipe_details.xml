@@ -10,7 +10,7 @@
     tools:context=".RecipeDetailsActivity">
 
     <androidx.appcompat.widget.Toolbar
-        app:title="Recipe Details"
+        app:title="Detalhes"
         app:titleTextColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize" />
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:text="Similar Recipes"
+                android:text="Receitas similares"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textSize="18sp"
